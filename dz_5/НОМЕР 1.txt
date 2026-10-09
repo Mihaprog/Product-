@@ -1,0 +1,8 @@
+nalog_stav = 0,13
+
+dohod = float(input("Введите годовой налог: "))
+nalog = dohod * nalog_stav
+na_ruk = dohod - nalog
+print(f"Доход: {dohod:,.2f}")
+print(f"Налог (13%): {nalog:,.2f}")
+print(f"На руки: {na_ruk:,.2f}")

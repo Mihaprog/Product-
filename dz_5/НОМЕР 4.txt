@@ -1,0 +1,15 @@
+import math
+
+def ploshad_prim(shir, vis):
+    """Площадь прямоугольника."""
+    return shir * vis
+
+def ploshad_krug(radius):
+    """Площадь круга."""
+    return math.pi * radius ** 2
+
+shir, vis = map(float, input("Ширина и высота: ").split())
+print(f"Прямоугольник: {ploshad_prim(shir, vis):.2f}")
+
+radius = float(input("Радиус круга: "))
+print(f"Круг: {ploshad_krug(radius):.2f}")
