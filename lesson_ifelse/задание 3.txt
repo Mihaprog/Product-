@@ -1,0 +1,8 @@
+mesec = int(input())
+
+if mesec == 2:
+    print(28)
+elif mesec == 4 or mesec == 6 or mesec == 9 or mesec == 11:
+    print(30)
+else:
+    print(31)

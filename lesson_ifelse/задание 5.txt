@@ -1,0 +1,19 @@
+cvet1 = input()
+cvet2 = input()
+
+dopus_cveta = ["красный", "синий", "желтый"]
+
+if cvet1 not in valid_colors or cvet2 not in dopus_cveta:
+    print("Ошибка: введен неподходящий цвет")
+else:
+
+    if (cvet1 == "красный" and cvet2 == "синий") or (cvet1 == "синий" and cvet2 == "красный"):
+        print("фиолетовый")
+
+    elif (cvet1 == "красный" and cvet2 == "желтый") or (cvet1 == "желтый" and cvet2 == "красный"):
+        print("оранжевый")
+ 
+    elif (cvet1 == "синий" and cvet2 == "желтый") or (cvet1 == "желтый" and cvet2 == "синий"):
+        print("зеленый")
+    else:
+        print("Ошибка: нельзя смешать два одинаковых цвета")
