@@ -1,0 +1,14 @@
+num = int(input("Номер ячейки (0-36): "))
+
+if num < 0 or num > 36:
+    print("Ошибка ввода")
+elif num == 0:
+    print("Зеленый")
+elif 1 <= num <= 10:
+    print("Красный" if num % 2 != 0 else "Черный")
+elif 11 <= num <= 18:
+    print("Черный" if num % 2 != 0 else "Красный")
+elif 19 <= num <= 28:
+    print("Красный" if num % 2 != 0 else "Черный")
+elif 29 <= num <= 36:
+    print("Черный" if num % 2 != 0 else "Красный")
